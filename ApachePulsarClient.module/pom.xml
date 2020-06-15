@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tibco.bw</groupId>
+    <artifactId>ApachePulsarClient.parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../ApachePulsarClient.parent</relativePath>
+  </parent>
+  <artifactId>ApachePulsarClient.module</artifactId>
+  <packaging>bwmodule</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>com.tibco.plugins</groupId>
+      <artifactId>com.tibco.bw.palette.shared</artifactId>
+      <version>6.1.100</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.pulsar</groupId>
+    	<artifactId>pulsar-client</artifactId>
+    	<version>2.5.2</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <outputDirectory>target/classes</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>com.tibco.plugins</groupId>
+        <artifactId>bw6-maven-plugin</artifactId>
+        <version>2.7.0</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_xayuIK8PEeqgzOb8Ka6wNQ" targetNamespace="http://tns.tibco.com/bw/composite/ApachePulsarClient.module" name="ApachePulsarClient.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_x9o8gK8PEeqgzOb8Ka6wNQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_x9ytgK8PEeqgzOb8Ka6wNQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_x91w0K8PEeqgzOb8Ka6wNQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_x95bMK8PEeqgzOb8Ka6wNQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_x98egK8PEeqgzOb8Ka6wNQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_x9_h0K8PEeqgzOb8Ka6wNQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_x-B-EK8PEeqgzOb8Ka6wNQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Q-Ue8K8TEeq_fKCVTRSFvg" name="serviceUrl" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_xvdWkK8PEeqgzOb8Ka6wNQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_xveksK8PEeqgzOb8Ka6wNQ" processName="apachepulsarclient.module.Receiver"/>
+  </sca:component>
+  <sca:component xmi:id="_c50moK8eEeq_fKCVTRSFvg" name="ComponentPublisher" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_c51NsK8eEeq_fKCVTRSFvg" processName="apachepulsarclient.module.Publisher"/>
+  </sca:component>
+</sca:composite>

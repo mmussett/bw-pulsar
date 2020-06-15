@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: ApachePulsarClient.module
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Import-Package: com.tibco.bw.palette.shared.java;version="6.2.800",com
+ .tibco.bw.runtime;version="6.3.1000"
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.java)",com.tibco.bw.sharedresource.model; fil
+ ter:="(name=bw.java)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15
+Export-Package: com.tibco.apd.bw
+Bundle-Name: ApachePulsarClient Module
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: ., external:/Users/mmussett/.m2/repository/org/apach
+ e/pulsar/pulsar-client/2.5.2/pulsar-client-2.5.2.jar, external:/Users
+ /mmussett/.m2/repository/org/apache/pulsar/pulsar-client-api/2.5.2/pu
+ lsar-client-api-2.5.2.jar, external:/Users/mmussett/.m2/repository/or
+ g/apache/pulsar/pulsar-transaction-common/2.5.2/pulsar-transaction-co
+ mmon-2.5.2.jar, external:/Users/mmussett/.m2/repository/com/google/pr
+ otobuf/protobuf-java-util/3.5.1/protobuf-java-util-3.5.1.jar, externa
+ l:/Users/mmussett/.m2/repository/com/google/guava/guava/19.0/guava-19
+ .0.jar, external:/Users/mmussett/.m2/repository/com/google/code/gson/
+ gson/2.7/gson-2.7.jar, external:/Users/mmussett/.m2/repository/org/ap
+ ache/pulsar/protobuf-shaded/2.1.0-incubating/protobuf-shaded-2.1.0-in
+ cubating.jar, external:/Users/mmussett/.m2/repository/com/google/code
+ /findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, external:/Users/mmussett/.m2
+ /repository/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.
+ 0.jar, external:/Users/mmussett/.m2/repository/com/google/errorprone/
+ error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar, exte
+ rnal:/Users/mmussett/.m2/repository/com/google/j2objc/j2objc-annotati
+ ons/1.1/j2objc-annotations-1.1.jar, external:/Users/mmussett/.m2/repo
+ sitory/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniff
+ er-annotations-1.14.jar, external:/Users/mmussett/.m2/repository/org/
+ lz4/lz4-java/1.5.0/lz4-java-1.5.0.jar, external:/Users/mmussett/.m2/r
+ epository/com/github/luben/zstd-jni/1.3.7-3/zstd-jni-1.3.7-3.jar, ext
+ ernal:/Users/mmussett/.m2/repository/org/xerial/snappy/snappy-java/1.
+ 1.1.3/snappy-java-1.1.1.3.jar, external:/Users/mmussett/.m2/repositor
+ y/org/apache/pulsar/bouncy-castle-bc-shaded/2.5.2/bouncy-castle-bc-sh
+ aded-2.5.2.jar, external:/Users/mmussett/.m2/repository/com/sun/activ
+ ation/javax.activation/1.2.0/javax.activation-1.2.0.jar, external:/Us
+ ers/mmussett/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.
+ 25.jar, external:/Users/mmussett/.m2/repository/javax/validation/vali
+ dation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, external:/User
+ s/mmussett/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotati
+ ons-1.0.jar, external:/Users/mmussett/.m2/repository/com/google/proto
+ buf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+

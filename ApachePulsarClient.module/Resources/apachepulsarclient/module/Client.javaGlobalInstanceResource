@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:javasharedresource="http://ns.tibco.com/bw/palette/javasharedresource" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_YdniEa8TEeq_fKCVTRSFvg" name="apachepulsarclient.module.Client" type="javasharedresource:JavaGlobalInstanceResource">
+  <jndi:configuration xsi:type="javasharedresource:JavaGlobalInstance" xmi:id="_YdniEq8TEeq_fKCVTRSFvg" className="com.tibco.apd.bw.Client" methodName="Client" isNewShared="true">
+    <javaConstructorParameter xmi:id="_aGMCYa8TEeq_fKCVTRSFvg" paramName="url" paramType="string">
+      <substitutionBindings xmi:id="_a5dSYK8TEeq_fKCVTRSFvg" template="paramValue" propName="serviceUrl"/>
+    </javaConstructorParameter>
+    <methodParameters xmi:id="_aGMCYK8TEeq_fKCVTRSFvg" paramType="string"/>
+  </jndi:configuration>
+</jndi:namedResource>
